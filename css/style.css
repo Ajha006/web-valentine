@@ -1,0 +1,175 @@
+/*body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffe6f2;
+}
+
+/* .container {
+    margin-top: 50px;
+} */
+
+/* .container {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+} */
+/*
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('images/Valentine.png') no-repeat center center/cover;
+    padding: 20px;
+}
+
+
+
+img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    margin: 20px auto;
+}
+
+
+button {
+    background-color: #ff4d88;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #e6005c;
+}
+
+/* textarea {
+    width: 80%;
+    height: 100px;
+    margin-top: 20px;
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffe6f2;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden; /* Prevents scrolling */
+}
+
+/* Main container */
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Make the image cover the full screen */
+#day-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1; /* Send image to background */
+}
+
+/* Ensure the text is pinned to the top */
+ .top-text {
+    position: absolute;
+    top: 0; /* Pin it to the top */
+     left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    color: white; /* Adjust color for visibility */
+     font-size: 28px;
+    font-weight: bold;
+    padding: 20px 0;
+    z-index: 10; /* Ensure it is always above the image */
+ } 
+
+/* Add a semi-transparent background to improve visibility */
+.top-text span {
+    display: block;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Bottom quote styling */
+.quote {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 28px;
+    font-style: italic;
+    color: black;
+    font-family: 'Cursive', sans-serif;
+    z-index: 2;
+}
+/* Center the Yes/No buttons */
+#proposal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+    position: absolute;
+    bottom: 15%; /* Moves the buttons lower */
+    z-index: 5;
+}
+
+/* Style the buttons */
+.propose-btn {
+    background-color: #ff4d79;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.propose-btn:hover {
+    background-color: #e60050;
+}
+.propose-btn {
+    background-color: #ff4d79;
+    color: white;
+    border: none;
+    padding: 16px 32px; /* Increased padding for bigger size */
+    font-size: 24px; /* Increased font size */
+    border-radius: 12px; /* Slightly larger rounded corners */
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.propose-btn:hover {
+    background-color: #e60050;
+    transform: scale(1.1); /* Slight increase on hover */
+}

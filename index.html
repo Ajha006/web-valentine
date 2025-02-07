@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine’s Week Celebration</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- Top section for text -->
+    <div class="top-text">
+        <h1>Welcome to Valentine’s Week</h1>
+        <p id="day-message">Let’s celebrate love every day!</p>
+    </div>
+
+    <!-- Container for image and interaction -->
+    <div class="container">
+        <img id="day-image" src="images/Valentine.png" alt="Valentine Image">
+
+        <div id="question-section" style="display: none;">
+            <div id="proposal-buttons">
+                <button onclick="proceed(true)">Yes</button>
+                <button onclick="proceed(false)">No</button>
+            </div>
+        </div>
+        
+        <!-- <div id="question-section" style="display: none;">
+            <p>Will you be my Valentine?</p>
+            <button onclick="proceed(true)">Yes</button>
+            <button onclick="proceed(false)">No</button>
+        </div> -->
+<!-- Promise Box -->
+<!-- <div id="promise-container" style="display: none;"> -->
+    <!-- <textarea id="promise" placeholder="Write a 200-word promise for your Valentine..." maxlength="200"></textarea>
+    <p id="notification" style="display: none; color: green; font-weight: bold;">Message sent!</p>
+</div> -->
+
+<div id="promise-container" style="display: none; text-align: center;">
+    <textarea id="promise" placeholder="Write a 200-word promise for your Valentine..." maxlength="200"></textarea>
+    <p id="notification" style="display: none; color: green; font-weight: bold; margin-top: 10px;">Promise saved!</p>
+</div>
+
+<!-- <textarea id="promise" placeholder="Write a 200-word promise for your Valentine..." maxlength="200" style="display: none;"></textarea> -->
+
+        <p id="timer"></p>
+    </div> 
+    <script src="js/script.js"></script>
+</body>
+</html>
+</html>
